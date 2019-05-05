@@ -12,9 +12,9 @@ import javafx.stage.Stage;
 
 public class RegistrationScene {
 	
-	Scene scene;
-	GridPane grid;
-	static Label firstNameLBL, 
+	private Scene scene;
+	private GridPane grid;
+	private static Label firstNameLBL, 
 		  		 lastNameLBL, 
 		  		 addressLBL, 
 		  		 zipcodeLBL, 
@@ -25,7 +25,7 @@ public class RegistrationScene {
 		  		 ssnLBL, 
 		  		 securityQuestionLBL, 
 		  		 answerLBL;
-	static TextField firstNameTXT, 
+	private static TextField firstNameTXT, 
 	  		  		 lastNameTXT,
 	  		  		 addressTXT,
 	  		  		 zipcodeTXT,
@@ -37,7 +37,7 @@ public class RegistrationScene {
 	  		  		 securityQuestionTXT,
 	  		  		 answerTXT;
 	
-	static Button loginButton;
+	private static Button loginButton;
 	
 	public static void initialize() {
 		
@@ -66,6 +66,43 @@ public class RegistrationScene {
         answerTXT = new TextField();
         
         loginButton = new Button("Create User");
+        
+        GridPane grid = new GridPane();
+        grid.setPadding(new Insets(10,10,10,10));
+        grid.setVgap(8);
+        grid.setHgap(10);
+        grid.setPadding(new Insets(30,30,30,30));
+        grid.setVgap(15);
+        grid.setHgap(12);
+        
+        GridPane.setConstraints(firstNameLBL, 0, 0);
+        GridPane.setConstraints(lastNameLBL, 0 , 1);
+        GridPane.setConstraints(addressLBL, 0, 2);
+        GridPane.setConstraints(zipcodeLBL, 0, 3);
+        GridPane.setConstraints(stateLBL, 0, 4);
+        GridPane.setConstraints(usernameLBL, 0, 5);
+        GridPane.setConstraints(passwordLBL, 0, 6);
+        GridPane.setConstraints(emailLBL, 0, 7);
+        GridPane.setConstraints(ssnLBL, 0, 8);
+        GridPane.setConstraints(securityQuestionLBL, 0, 9);
+        GridPane.setConstraints(answerLBL, 0, 10);
+        
+        GridPane.setConstraints(firstNameTXT, 1, 0);
+        GridPane.setConstraints(lastNameTXT, 1, 1);
+        GridPane.setConstraints(addressTXT, 1, 2);
+        GridPane.setConstraints(zipcodeTXT, 1, 3);
+        GridPane.setConstraints(stateTXT, 1, 4);
+        GridPane.setConstraints(usernameTXT, 1, 5);
+        GridPane.setConstraints(passwordTXT, 1, 6);
+        GridPane.setConstraints(emailTXT, 1, 7);
+        GridPane.setConstraints(ssnTXT, 1, 8);
+        GridPane.setConstraints(securityQuestionTXT, 1, 9);
+        GridPane.setConstraints(answerTXT, 1, 10);
+        
+        GridPane.setConstraints(loginButton, 1, 11);
+
+        
+
         
         System.out.println("registration screen initialized");
 
