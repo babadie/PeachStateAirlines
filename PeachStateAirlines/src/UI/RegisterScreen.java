@@ -90,6 +90,7 @@ public class RegisterScreen extends Application {
         TextField firstNameTXT = new TextField();
         GridPane.setConstraints(firstNameTXT, 1, 0);
         
+        
         //Last Name Label - constrains use (child, column, row)
         TextField lastNameTXT = new TextField();
         GridPane.setConstraints(lastNameTXT, 1, 1);
@@ -161,8 +162,23 @@ public class RegisterScreen extends Application {
         					      answerTXT, 
         					      loginButton);
         
+  /*      if (firstNameTXT.getText().isEmpty() || 
+        	lastNameTXT.getText().isEmpty() || 
+        	addressTXT.getText().isEmpty() ||
+        	zipcodeTXT.getText().isEmpty() ||
+        	stateTXT.getText().isEmpty() ||
+        	usernameTXT.getText().isEmpty() ||
+        	passwordTXT.getText().isEmpty() ||
+        	emailTXT.getText().isEmpty() ||
+        	ssnTXT.getText().isEmpty() ||
+        	securityQuestionTXT.getText().isEmpty() ||
+        	answerTXT.getText().isEmpty()) 
+        {
+        	AlertBox.display("Blank field in registration screen" , "please fill out all fields!");
+        }
+        
 
-  
+  */
         
     }
 
